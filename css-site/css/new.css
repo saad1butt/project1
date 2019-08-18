@@ -1,0 +1,480 @@
+/**********DEFAULTS**************/
+
+
+
+nav, header, footer
+{
+    display: block;
+}
+nav
+{
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+body
+{
+line-height: 1;
+    margin: 0;
+}
+
+
+
+
+/**********NAV BAR**************/
+
+
+
+
+nav
+{
+    width: 100%;
+    margin: 0;
+	position: fixed;
+	z-index: 1;
+}
+
+
+
+
+
+article p
+{
+    padding: 20px;
+    font-size: 35px;
+}
+
+
+
+
+
+label
+{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+
+
+* { 
+box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+  .container
+    {
+        width: 100%;
+        margin: auto;
+    padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+
+
+
+
+
+
+.row
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+
+
+
+.row::after
+{
+    display: table;
+    clear: both;
+    content: "" ;
+}
+
+
+
+
+
+
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+
+
+
+
+
+
+div.dp img 
+{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 75px 2px rgba(0,0,0,0.75) ;
+}
+
+
+
+
+
+div.icon img
+{
+    width: 100px;
+}
+
+
+
+
+
+p
+{
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+
+
+
+div.icon {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+div.box p
+{
+    font-size: 18px;
+}
+
+
+
+
+
+
+div.box
+{
+    border-radius: 7px; 
+    margin: 24px;
+    text-align: center;
+    padding: 36px 24px 40px 24px ;
+    background-color: white;
+box-shadow: 0px 20px 40px 0px rgba(0,0,0,1) ;
+}
+
+
+
+
+
+
+
+
+
+h1.large
+{
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+
+
+
+
+h1.section2head
+{
+    font-size: 55px;
+    text-align: center;
+}
+
+
+
+
+form h2{
+    color: #fff;
+}
+
+
+
+
+button
+{
+    margin: 5px;
+    border-radius: 7px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 15px 60px ;
+    text-align: center;
+    display: block;
+    color:#fff;
+    background-color: #0069ff;
+}
+
+
+
+button.learnmore 
+{
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+input[type="text"]{
+    font-size: 20px;
+    width:350px;
+    min-width: 100px;
+padding: 5px;
+    border-radius: 7px;
+}
+
+
+
+
+
+nav ul
+{
+    background-color: darkcyan;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+	
+}
+
+
+
+
+ul.topnavleft li
+{
+    list-style: none;
+    float: left;
+}
+
+
+
+
+ul.topnavleft li.topnavright
+{
+    float:right;
+}
+
+
+
+
+
+ul.topnavleft a
+{
+    text-decoration: none;
+    display: block;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    color: black;
+border-radius: 10px;
+	font-size: 20px;
+	font-family: cursive;
+	margin-left: 7px;
+}
+
+
+
+ul.topnavleft a:hover
+{
+    background-color: dodgerblue;
+    color: gray;
+}
+
+
+
+
+
+ul.topnavleft li.dropdownicon
+{
+    display: none;
+}
+
+
+
+
+  /**********Custom styles*************/
+
+  
+    #section-1-grad {
+        background: linear-gradient(#076dff,#65a5ff);
+    }
+
+
+
+footer.footsy
+{
+    background-color: darkslategrey;
+    padding-left: 10% ;
+}
+
+
+
+footer.footsy h1
+{
+    color: wheat;
+    font-size: 24px;
+}
+
+
+footer ul 
+{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+
+
+
+
+footer ul li
+{
+    color: white;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
+/**********Mobile**************/
+
+
+
+
+@media screen and (max-width: 680px)
+{
+    ul.topnavleft li:not(:nth-child(1))
+    {
+        display:none;
+    }
+    ul.topnavleft li.dropdownicon
+    {
+        display: block;
+    float: right;
+    }
+    ul.topnavleft.responsive li.dropdownicon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnavleft.responsive
+    {
+        position: relative;
+    }
+    ul.topnavleft.responsive li
+    {
+        display: inline;
+        float: none;
+    }
+     ul.topnavleft.responsive li a
+    {
+        display: block;
+        text-align: left;
+    }
+ .col-6,
+    .col-4, 
+    .col-5,
+    .col-7, .col-3
+    {
+        width: 100%;
+        margin: 0;
+    
+    }
+   
+    div.col-3 {
+        width: 50%;
+        display: block;
+    }
+    
+    
+    div.leftcol, div.rightcol {
+        margin: 15px;
+    }
+    input[type="text"]
+    {
+        width: 100% ;
+        position: relative;
+    }
+    .videocontainer iframe
+    {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    div.box
+    {
+      font-size: 15px;
+        padding: 5px;
+        display: block;
+    }
+    article p
+{
+   font-size: 20px;
+    }
+    div.dp
+    {
+        width: 100%;
+        margin: auto;
+    }
+    
+    
+    
+    
+}
+
+
+
+
+.leftcol {
+        margin-left: 30%;
+    }
+.rightcol
+{
+    margin-left: 15%;
+}
+
+ 
